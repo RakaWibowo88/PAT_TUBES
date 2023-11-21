@@ -1,0 +1,174 @@
+:root {
+  --darkGray: #2d3748;
+  --gray: #4a5568;
+  --grayLight: #f7fafc;
+  --primary: #6b46c1;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  background: white;
+  height: 85px;
+  display: flex;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1);
+}
+
+.navbar a {
+  text-decoration: none; /* Menghilangkan garis bawah tautan */
+  color: #000000; /* Warna yang diinginkan untuk tautan */
+}
+
+.navbar a:hover {
+  color: #93d627; /* Warna yang diinginkan saat tautan dihover */
+}
+
+.navbar > h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-container {
+  display: flex;
+  height: 470px;
+  padding: 0 10%;
+}
+
+.hero-container > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container h1 {
+  font-size: 40px;
+  width: 360px;
+  margin: 20px 0;
+  font-weight: bolder;
+}
+
+.hero-container p {
+  font-size: 20px;
+  color: var(--gray);
+}
+
+.hero-container > img {
+  width: 40%;
+  height: 503px;
+  align-self: center;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.description-container {
+  height: 280px;
+  margin: 40px 0;
+  padding: 0 10%;
+  display: flex;
+}
+
+.description-container > div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+  border-top: 1px solid rgb(228, 228, 228);
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fafc; /* Warna latar belakang sesuai kebutuhan */
+  margin-right: 900px;
+  margin-top: 1px;
+}
+
+.bottom-buttons button {
+  padding: 20px 40px;
+  background-color: #12013b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.bottom-buttons button:hover {
+  background-color: #805ad5;
+}
+
+.login-button {
+  margin-right: 30px; /* Menambah margin antara tombol Login dan Register */
+}
+
+
+/*utils */
+/* Tambahkan pada bagian media query */
+@media only screen and (max-width: 420px) {
+  .navbar {
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar > h1 {
+    font-size: 16px;
+  }
+}
+
+/* Tambahkan pada bagian media query */
+@media only screen and (max-width: 420px) {
+  .hero-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 5%;
+  }
+
+  .hero-container > div {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-container > img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+/* Tambahkan pada bagian media query */
+@media only screen and (max-width: 420px) {
+  .description-container {
+    flex-wrap: wrap;
+    height: auto;
+    margin: 20px 5%;
+  }
+
+  .description-container > div {
+    width: 100%;
+    padding: 5%;
+  }
+}
