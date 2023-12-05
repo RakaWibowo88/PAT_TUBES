@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <script>
+        // Fungsi untuk melakukan logout
+        function logout() {
+            alert("Anda telah logout.");
+            // Implementasikan logika logout, misalnya redirect ke halaman login
+            // window.location.href = "logout.php"; // Gantilah dengan URL logout yang sesuai
+        }
+
+        // Fungsi untuk kembali login
+        function loginAgain() {
+            alert("Anda telah login kembali.");
+            // Implementasikan logika login kembali, misalnya redirect ke halaman Dashboard
+            window.location.href = "Dashboard.html"; // Gantilah dengan URL Dashboard yang sesuai
+        }
+    </script>
+</head>
+<body>
+    <h1>Coming Soon (Login Admin)</h1>
+
+    <!-- Tombol untuk kembali login -->
+    <button onclick="loginAgain()">Login Kembali</button>
+</body>
+</html>
